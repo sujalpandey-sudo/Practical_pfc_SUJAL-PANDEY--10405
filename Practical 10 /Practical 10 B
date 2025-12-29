@@ -1,0 +1,38 @@
+/* 
+   Practical 10 – Program 2
+   Name: Sujal pandey -10405
+   Sum of Diagonal Elements
+*/
+
+#include <stdio.h>
+
+int main() {
+    int n, i, j, sum = 0;
+
+    printf("Enter size of square matrix: ");
+    scanf("%d", &n);
+
+    int a[n][n];
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        for(j = 0; j < n; j++)
+            scanf("%d", &a[i][j]);
+
+    for(i = 0; i < n; i++)
+        sum += a[i][i];
+
+    printf("Sum of Diagonal Elements = %d", sum);
+
+    return 0;
+}
+
+/*
+Sample Output:
+Enter size: 3
+1 2 3
+4 5 6
+7 8 9
+
+Sum of Diagonal Elements = 15
+*/
