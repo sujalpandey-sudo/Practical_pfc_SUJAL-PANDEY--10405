@@ -1,0 +1,36 @@
+/* 
+   Practical 9 – Program 3
+   Name:Sujal pandey-10405
+   Sum of All Even Elements
+*/
+
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0;
+
+    printf("Enter array size: ");
+    scanf("%d", &n);
+
+    int a[n];
+    printf("Enter %d elements: ", n);
+    for(i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    for(i = 0; i < n; i++) {
+        if(a[i] % 2 == 0)
+            sum += a[i];
+    }
+
+    printf("Sum of Even Elements = %d", sum);
+
+    return 0;
+}
+
+/*
+Sample Output:
+Enter array size: 6
+Enter 6 elements: 1 2 3 4 5 6
+
+Sum of Even Elements = 12
+*/
