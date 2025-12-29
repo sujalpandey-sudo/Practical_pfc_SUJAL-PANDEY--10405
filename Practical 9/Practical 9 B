@@ -1,0 +1,39 @@
+/* 
+   Practical 9 – Program 2
+   Name: Sujal pandey-10405
+   Max and Min Element of Array
+*/
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter array size: ");
+    scanf("%d", &n);
+
+    int a[n];
+    printf("Enter %d elements: ", n);
+    for(i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    int max = a[0], min = a[0];
+
+    for(i = 1; i < n; i++) {
+        if(a[i] > max) max = a[i];
+        if(a[i] < min) min = a[i];
+    }
+
+    printf("Maximum Element = %d\n", max);
+    printf("Minimum Element = %d\n", min);
+
+    return 0;
+}
+
+/*
+Sample Output:
+Enter array size: 5
+Enter 5 elements: 10 25 3 7 9
+
+Maximum Element = 25
+Minimum Element = 3
+*/
