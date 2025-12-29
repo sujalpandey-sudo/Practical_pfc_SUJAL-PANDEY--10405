@@ -1,0 +1,29 @@
+/*
+    Name: Sujal pandey-10405
+    Practical 6 - Q1: Print numbers from a to b using loops
+*/
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter a: ");
+    scanf("%d", &a);
+    printf("Enter b: ");
+    scanf("%d", &b);
+
+    printf("Numbers from %d to %d:\n", a, b);
+    for (int i = a; i <= b; i++) {
+        printf("%d ", i);
+    }
+
+    /*
+    OUTPUT:
+    Enter a: 3
+    Enter b: 7
+    Numbers from 3 to 7:
+    3 4 5 6 7
+    */
+
+    return 0;
+}
